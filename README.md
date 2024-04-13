@@ -5,8 +5,8 @@
 <h1>Automated User Creation for New Hire Onboarding (Azure)</h1>
 This tutorial outlines creating an MS Entra ID group and adding a dynamic query to create a user attribute to assign the user to the appropriate MS Entra ID group. This tutorial will outline how to use a Microsoft Form to trigger and automate a workflow built in Power Automate to create user profiles inside of Microsoft Entra ID. Please ensure that the following subscriptions are active. Please review the links below for more information on each subscription:
 
-- [Entra ID Premium P2"(https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)"]
-- [Microsoft 365 Business Basics"(https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic?activetab=pivot:overviewtab)"]
+- [Entra ID Premium P2](https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)
+- [Microsoft 365 Business Basics](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic?activetab=pivot:overviewtab)
 
 <br />
 
