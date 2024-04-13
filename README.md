@@ -39,10 +39,10 @@ For the dynamic membership rule, select ‘Department’ under ‘Choose Propert
 <br />
 <h2>Creating a Form in MS Forms</h2>
 <p>
-<img src=".png" height="80%" width="80%" alt="MS Forms Creation"/>
+<img src="https://imgur.com/52zp8NH.png" height="80%" width="80%" alt="MS Forms Creation"/>
 </p>
 <p>
-Loip sum.
+Create a form in MS Forms > Select New Form, once you are signed into their MS Forms account. This is the starting point of the project and where we begin to build out the steps for automating the joiner process.
 </p>
 <br />
 <h2>Creating a Workflow in Power Automate</h2>
@@ -55,10 +55,29 @@ Loip sum.
 <br />
 <h2>Adding Parameters for each Action Workflow</h2>
 <p>
-<img src=".png" height="70%" width="70%" alt="Adding Parameters"/>
+<img src="https://imgur.com/jXO30Q9.png" height="70%" width="70%" alt="Adding Parameters"/>
+<img src="https://imgur.com/mDhIhhv.png" height="70%" width="70%" alt="Adding Parameters"/>
 </p>
 <p>
-Loip Sum.
+Open MS Power Automate > My Flows > New Flow (you can create from a blank canvas or a template) > Select automated cloud flow under build from a blank canvas. Create flow, add the flow name, and choose ‘When a new response is submitted’ from the flow triggers. Select the flow that was created and select the form that was created previously. Next, select the plus icon and ‘Add an action’. Select the Microsoft Forms tab and select the trigger ‘Get response details. *It should ask you to ‘Sign In’ to connect to Microsoft Forms.*
+</p>
+<br />
+<h2>Adding Parameters for each Action Workflow Continued</h2>
+<p>
+<img src="https://imgur.com/1QRQFAP.png" height="70%" width="70%" alt="Adding Parameters"/>
+</p>
+<p>
+After signing in, you will select the Onboarding form as the Form ID and enter a unique identifier for the Response ID by selecting the lightning bolt to the right. Next, we will do the same for the next action by selecting Create a user from Microsoft Entra ID.
+</p>
+<br />
+<h2>Adding Parameters for each Action Workflow Continued</h2>
+<p>
+<img src="https://imgur.com/9MuH0AU.png" height="70%" width="70%" alt="Adding Parameters"/>
+<img src="https://imgur.com/UI4pqZW.png" height="70%" width="70%" alt="Adding Parameters"/>
+<img src="https://imgur.com/yLxnP5x.png" height="70%" width="70%" alt="Adding Parameters"/>
+</p>
+<p>
+In the search bar, you can search for 'Entra' and select 'Create A User'. Next, you will fill in the parameters by selecting the lightening bolt to the right to fill in the information that is connected from the Microsoft Form that was created earlier.
 </p>
 <br />
 <h2>Testing the Work Flow</h2>
