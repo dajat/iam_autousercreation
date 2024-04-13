@@ -2,13 +2,12 @@
 <img src="https://imgur.com/i4tvZYY.png" height="50%" width="50% alt=" Microsoft Entra"/>
 </p>
 
-<h1>Automated User Creation (Azure)</h1>
-This tutorial outlines creating an MS Entra ID group and adding a dynamic query to create a user attribute to assign the user to the appropriate MS Entra ID group. This tutorial will outline how to use a Microsoft Form to trigger and automate a workflow built in Power Automate to create user profiles inside of Microsoft Entra ID. Please ensure that the following subscriptions are active:
+<h1>Automated User Creation for New Hire Onboarding (Azure)</h1>
+This tutorial outlines creating an MS Entra ID group and adding a dynamic query to create a user attribute to assign the user to the appropriate MS Entra ID group. This tutorial will outline how to use a Microsoft Form to trigger and automate a workflow built in Power Automate to create user profiles inside of Microsoft Entra ID. Please ensure that the following subscriptions are active. Please review the links below for more information on each subscription:
 
-- Entra ID Premium P2
-- Microsoft Business Basics
+- [Entra ID Premium P2"(https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)"]
+- [Microsoft 365 Business Basics"(https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic?activetab=pivot:overviewtab)"]
 
-Both of these subscriptions can be used as free trials for one month.
 <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -77,14 +76,15 @@ After signing in, you will select the Onboarding form as the Form ID and enter a
 <img src="https://imgur.com/yLxnP5x.png" height="70%" width="70%" alt="Adding Parameters"/>
 </p>
 <p>
-In the search bar, you can search for 'Entra' and select 'Create A User'. Next, you will fill in the parameters by selecting the lightening bolt to the right to fill in the information that is connected from the Microsoft Form that was created earlier.
+In the search bar, you can search for 'Entra' and select 'Create A User'. Next, you will sign in to your MS account fill out the parameters, and select ‘Advanced Parameters’ and ‘Department’ from the dropdown. Select the lightning bolt icon to add the parameters and select the department question from the MS Form. This allows for the responses from the MS Form to create users inside of the Microsoft Entra ID group that was created earlier. Next, let’s test it.
 </p>
 <br />
 <h2>Testing the Work Flow</h2>
 <p>
-<img src=".png" height="70%" width="70%" alt="Automation Testing"/>
+<img src="https://imgur.com/ay5KE7z.png" height="70%" width="70%" alt="Automation Testing"/>
+<img src="https://imgur.com/ZAGGhWs.png" height="70%" width="70%" alt="Automation Testing"/>
 </p>
 <p>
-Loip Sum.
+You can navigate back to the MS Form you previously created. Select ‘Responses’ > ‘Share to collect responses’ and copy/paste the link of the MS Form. Remember for Entra ID group, we created a rule that the ‘Department’ must equal ‘help desk’ and this new user will be added to the ‘Help Desk’ group. After filling out the form, go back to Microsoft Entra ID groups in Azure and check if the user has been created and they are in the Help Desk group.
 </p>
 <br />
